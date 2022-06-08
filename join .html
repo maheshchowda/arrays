@@ -1,0 +1,34 @@
+The join() method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma (,).
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var info = ["Terence", 28, "Kathmandu"];
+
+        var info_str = info.join(" | ");
+
+        // join() does not change the original array
+        console.log(info); // [ 'Terence', 28, 'Kathmandu' ]
+
+        // join() returns the string by joining with separator
+        console.log(info_str); // Terence | 28 | Kathmandu
+
+        // empty argument = no separator
+        var collection = [3, ".", 1, 4, 1, 5, 9, 2];
+        console.log(collection.join("")); // 3.141592
+
+        var random = [44, "abc", undefined];
+        console.log(random.join(" and ")); // 44 and abc and
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
