@@ -1,0 +1,25 @@
+map() creates a new array from calling a function for every array element. map() calls a function once for each element in an array. map() does not execute the function for empty elements. map() does not change the original array.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const array1 = [1, 4, 9, 16];
+
+        // pass a function to map
+        const map1 = array1.map(x => x * 2);
+
+        console.log(map1);
+        // expected output: Array [2, 8, 18, 32]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
