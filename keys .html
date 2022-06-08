@@ -1,0 +1,28 @@
+array_keys() returns the keys, numeric and string, from the array . If a search_value is specified, then only the keys for that value are returned.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const array1 = ['a', 'b', 'c'];
+        const iterator = array1.keys();
+
+        for (const key of iterator) {
+            console.log(key);
+        }
+
+        // expected output: 0
+        // expected output: 1
+        // expected output: 2
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
